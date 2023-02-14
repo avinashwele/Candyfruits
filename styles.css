@@ -2,13 +2,13 @@ body { margin: 0px;border: 0px;padding: 0px; }
 * { font-family: sans-serif;}
 
 /* header start */
-.header { overflow: hidden; background-color: #f1f1f1;padding: 20px 10px; }
+.header { overflow: hidden; background-color: #65C18C;padding: 10px 10px; height: 50px; }
 .header a { float: left; color: black; text-align: center;
     padding: 12px; text-decoration: none; font-size: 18px; 
     line-height: 25px; border-radius: 4px;}
-.header a.logo { font-size: 25px; font-weight: bold; }
+.header a.logo { font-size: 30px; font-weight: bold; }
 .header a:hover { background-color: #ddd; color: black; }
-.header a.active { background-color: rgb(169, 228, 121); 
+.header a.active { width: 100px; height: auto; background-color: rgb(169, 228, 121); 
     margin-right: 10px; color: white; }
 .header-right { float: right;}
 
@@ -26,15 +26,16 @@ body { margin: 0px;border: 0px;padding: 0px; }
 
 /* navbar section-------------------------------------*/
 .navbar{
-    background-color: black;
+    background-color: #C1F4C5;
     border-radius: 15px;
+    text-align: center;
   }
 .navbar li{
     float:left;
     list-style: none; 
     margin: 13px 20px;}
 .navbar ul{ overflow: auto;}
-.navbar li a{ padding: 3px 3px; text-decoration: none; color: white;}
+.navbar li a{ padding: 3px 3px; text-decoration: none; color: black;}
 .navbar li a:hover{ color: red }
 .search{ float: right; color: white; padding: 12px 75px; }
 .navbar input{
@@ -43,17 +44,61 @@ body { margin: 0px;border: 0px;padding: 0px; }
         padding: 3px 17px; width: 129px;
     }
 
+
 /* navbar end-------------------------------------*/
 
 /*Categories  section*/
+.conatiner{
+  background-color: #C9F4AA;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+.item {
+  background-color: #FCC2FC;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
 
+}
+.box{
+  background-color:#38E54D;
+  height: 230px;
+  width: 230px;
+  margin: 10px;
+  font-size: 50px;
+}
+h1 {
+  text-shadow: #C1F4C5;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
 
+}
+/* Media Queries */
+
+@media (max-width: 600px) {
+.flexbox .conatiner .item .box {
+    text-align: center;
+  }
+  .flexbox .conatiner .item {
+    float: right;
+    margin: 0 auto 20px;
+  }
+   .flexbox{
+    line-height: 1.8;
+  }
+}
+/*category media end-----------------------*/
 
 /*categories section end*/
 
 /*footer section*/
 .footerarea {
-  background-color: #292c2f;
+  background-color: #65C18C;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -62,7 +107,7 @@ body { margin: 0px;border: 0px;padding: 0px; }
   padding: 45px 50px;
 }
 
-.footerarea .footer-left p { color: #8f9296; font-size: 14px; margin: 0; }
+.footerarea .footer-left p { color: black; font-size: 16px; margin: 0; }
 .footerarea p.footer-links {
   font-size: 18px;  font-weight: bold;  color: #ffffff; 
   margin: 0 0 10px; padding: 0; transition: ease .25s; }
@@ -76,31 +121,17 @@ body { margin: 0px;border: 0px;padding: 0px; }
   color: #fff;  display: inline-block; padding-right: 5px;
 }
 
-.footerarea .footer-links .link-1:before { content: none;}
-
-.footerarea .footer-right { float: right; margin-top: 6px;max-width: 180px;}
-
-.footer-distributed .footer-right a {
-  display: inline-block;  width: 35px;  height: 35px;  background-color: #bfd6e4;
-  border-radius: 2px;  font-size: 20px;  color: #d63e3e;  text-align: center;
-  line-height: 35px;  margin-left: 3px; transition:all .25s;
-}
-
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
-
-.footer-distributed p.footer-links a:hover{text-decoration:underline;}
-
 /* Media Queries */
 
 @media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
+  .footerarea .footer-left, .footerarea {
     text-align: center;
   }
-  .footer-distributed .footer-right {
+  .footerarea {
     float: none;
     margin: 0 auto 20px;
   }
-  .footer-distributed .footer-left p.footer-links {
+  .footerarea .footer-left p.footer-links {
     line-height: 1.8;
   }
 }
