@@ -3,189 +3,12 @@
 
 <head>
 	<title>almond</title>
-	<style>
-		body {
-			margin: 0px;
-			border: 0px;
-			padding: 0px;
-		}
-
-		* {
-			font-family: sans-serif;
-		}
-
-		/* header start */
-		.header {
-			overflow: hidden;
-			background-color: #65C18C;
-			padding: 10px 10px;
-			height: 50px;
-		}
-
-		.header a {
-			float: left;
-			color: black;
-			text-align: center;
-			padding: 12px;
-			text-decoration: none;
-			font-size: 18px;
-			line-height: 25px;
-			border-radius: 4px;
-		}
-
-		.header a.logo {
-			font-size: 30px;
-			font-weight: bold;
-		}
-
-		.header a:hover {
-			background-color: #ddd;
-			color: black;
-		}
-
-		.header a.active {
-			width: 100px;
-			height: auto;
-			background-color: rgb(169, 228, 121);
-			margin-right: 10px;
-			color: white;
-		}
-
-		.header-right {
-			float: right;
-		}
-
-		@media screen and (max-width: 500px) {
-			.header a {
-				float: none;
-				display: block;
-				text-align: left;
-			}
-
-			.header-right {
-				float: none;
-			}
-		}
-
-		.navbar {
-			height: 70px;
-			background-color: rgb(157, 87, 223);
-			border-radius: 15px;
-			text-align: center;
-		}
-
-		.navbar li {
-			float: left;
-			list-style: none;
-			margin: 13px 20px;
-		}
-
-		.navbar ul {
-			overflow: auto;
-		}
-
-		.navbar li a {
-			padding: 3px 3px;
-			text-decoration: none;
-			color: black;
-		}
-
-		.navbar li a:hover {
-			color: red
-		}
-
-		.search {
-			float: right;
-			color: white;
-			padding: 12px 75px;
-		}
-
-		.navbar input {
-			border: 2px solid black;
-			border-radius: 14px;
-			padding: 3px 17px;
-			width: 129px;
-		}
-
-		.cards {
-			display: flex;
-			flex-direction: row;
-			margin: 0px;
-			justify-content: space-around;
-
-		}
-
-		.footerarea {
-			background-color: #201160;
-			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-			box-sizing: border-box;
-			width: 100%;
-			text-align: left;
-			font: normal 16px sans-serif;
-			padding: 45px 50px;
-		}
-
-		.footerarea .footer-left p {
-			color: black;
-			font-size: 16px;
-			margin: 0;
-		}
-
-		.footerarea p.footer-links {
-			font-size: 18px;
-			font-weight: bold;
-			color: #ffffff;
-			margin: 0 0 10px;
-			padding: 0;
-			transition: ease .25s;
-		}
-
-		.footerarea p.footer-links a {
-			display: inline-block;
-			line-height: 1.8;
-			text-decoration: none;
-			color: inherit;
-			transition: ease .25s;
-		}
-
-		.footerarea .footer-links a:before {
-			content: "|";
-			font-size: 20px;
-			left: 0;
-			color: #fff;
-			display: inline-block;
-			padding-right: 5px;
-		}
-
-		.circle {
-			margin-left: 400px;
-			margin-right: auto;
-		}
-
-		.item {
-			height: 300px;
-			width: 230px;
-			margin: 5px;
-			border: 2px solid #808080;
-			border-radius: 20px;
-			text-align: center;
-			padding-left: auto;
-			padding-bottom: auto;
-			padding-top: 30px;
-			background-color: whitesmoke;
-			display: block;
-		}
-
-		.logo {
-			text-align: center;
-			font-size: 30px;
-		}
-	</style>
+	<link rel="stylesheet" href="../../css/cat.css">
 </head>
 
 <body>
 	<div class="header">
-		<a class="logo" href="index.html"><img src="../../img" height="30px" width="30px">Candy Fruits</a>
+		<a class="logo" href="index.html"><img src="../../img/logo/drylicious.png" height="60px"></a>
 		<div class="header-right">
 			<a class="active" href="signup.html">Sign Up</a>
 			<a class="active" href="signin.html">Sign In</a>
@@ -205,8 +28,18 @@
 	</nav>
 	<br />
 	<div class="box">
-		<div class="circle"><img src="../../img/image/c.jpg"></div>
-
+		<div class="head-info">
+			<h2 class="head"> Cashew Nuts</h2>
+			<p class="info">
+				Cashews are rich in fiber, protein, and healthy fats. They also contain a variety of 
+			 vitamins, minerals, and health-protective beneficial plant compounds. Similarly to nuts, 
+			  cashews may promote weight loss, blood sugar control, and heart health. However, there's 
+			   less research on cashews than on other nuts. 
+			</p>
+		</div>
+		<div class="circle">
+			<img src="../../img/image/c.jpg">
+		</div>
 	</div>
 	<br />
 	<br />
@@ -215,33 +48,46 @@
 		<div class="item"><img src="../../img/image/C1.png" height="130px"><br />
 			<div class="logo">Rostaa Almonds</div>
 			<div class="price">
-				<del> ₹500</del> ₹350
-				<br /> <br />
-				<button> Buy Now</button>
+				<del class="del"> ₹500</del> <br>
+				<span class="selling-price"> ₹350 </span>
 			</div>
+			<div class="btn-div" style="padding-top:35px;">
+				<button class="btn add-to-cart"> Add to cart </button>
+				<button class="btn buy-now"> Buy Now</button>
+			</div>
+
 		</div>
 		<div class="item"><img src="../../img/image/C2.png" height="130px"><br />
 			<div class="logo">Borges Almonds</div>
 			<div class="price">
-				<del> ₹600</del> ₹450
-				<br /> <br />
-				<button> Buy Now</button>
+				<del class="del"> ₹600</del> <br>
+				<span class="selling-price">  ₹450 </span>
+			</div>
+			<div class="btn-div" style="padding-top:35px;">
+				<button class="btn add-to-cart"> Add to cart </button>
+				<button class="btn buy-now"> Buy Now</button>
 			</div>
 		</div>
 		<div class="item"><img src="../../img/image/C3.png" height="130px"><br />
 			<div class="logo">Signature Almonds</div>
 			<div class="price">
-				<del> ₹999</del> ₹800
-				<br /> <br />
-				<button> Buy Now</button>
+				<del class="del"> ₹999</del><br>
+				<span class="selling-price"> ₹800</span>
+			</div>
+			<div class="btn-div" style="padding-top:35px;">
+				<button class="btn add-to-cart"> Add to cart </button>
+				<button class="btn buy-now"> Buy Now</button>
 			</div>
 		</div>
 		<div class="item"><img src="../../img/image/C4.png" height="130px"><br />
 			<div class="logo">Prov flavours Almonds</div>
 			<div class="price">
-				<del> ₹999</del> ₹800
-				<br /> <br />
-				<button> Buy Now</button>
+				<del class="del" > ₹999</del> <br>
+				<span class="selling-price">₹800</span>
+			</div>
+			<div class="btn-div">
+				<button class="btn add-to-cart"> Add to cart </button>
+				<button class="btn buy-now"> Buy Now</button>
 			</div>
 		</div>
 
@@ -253,34 +99,46 @@
 		<div class="item"> <img src="../../img/image/C5.png" height="130px"><br />
 			<div class="logo">Flyberry Almonds</div>
 			<div class="price">
-				<del> ₹400</del> ₹250
-				<br /> <br />
-				<button> Buy Now</button>
+				<del class="del"> ₹400</del> <br>
+				<span class="selling-price">₹250</span>
+			</div>
+			<div class="btn-div" style="padding-top:35px;">
+				<button class="btn add-to-cart"> Add to cart </button>
+				<button class="btn buy-now"> Buy Now</button>
 			</div>
 		</div>
 		<div class="item"> <img src="../../img/image/C6.png" height="130px"><br />
 			<div class="logo">Prov Flavours Almonds</div>
 			<div class="price">
-				<del> ₹1200</del> ₹950
-				<br /> <br />
-				<button> Buy Now</button>
+				<del class="del"> ₹1200</del> <br>
+				<span class="selling-price">₹950</span>
+			</div>
+			<div class="btn-div">
+				<button class="btn add-to-cart"> Add to cart </button>
+				<button class="btn buy-now"> Buy Now</button>
 			</div>
 		</div>
 
 		<div class="item"><img src="../../img/image/C7.png" height="130px"><br />
 			<div class="logo">True Element Almonds</div>
 			<div class="price">
-				<del> ₹1500</del> ₹1250
-				<br /> <br />
-				<button> Buy Now</button>
+				<del class="del"> ₹1500</del> <br>
+				<span class="selling-price"> ₹1250</span>
+			</div>
+			<div class="btn-div">
+				<button class="btn add-to-cart"> Add to cart </button>
+				<button class="btn buy-now"> Buy Now</button>
 			</div>
 		</div>
 		<div class="item"><img src="../../img/image/C8.png" height="130px"><br />
 			<div class="logo">California Almonds</div>
 			<div class="price">
-				<del> ₹999</del> ₹800
-				<br /> <br />
-				<button> Buy Now</button>
+				<del class="del"> ₹999</del> <br>
+				<span class="selling-price"> ₹800</span>
+			</div>
+			<div class="btn-div" style="padding-top:35px;">
+				<button class="btn add-to-cart"> Add to cart </button>
+				<button class="btn buy-now"> Buy Now</button>
 			</div>
 		</div>
 
