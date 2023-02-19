@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="..//css/login.css" media="all" />
 </head>
 <body>
-	<div class="sign Up">
-		<h1 class="loginh1">Login</h1><br><br>
-		<form>
-			<p>Username</p>
-			<input type="text" name="" placeholder="Enter Username">
-			<p>Password</p>
-			<input type="password" name="" placeholder="Enter Password">
-			<input type="submit" name="" value="Login">
-			<a href="#">Lost your passward ?</a><br>
-			<a href="#">Don't have an account ?</a><br>
+    
+    <div class="hero">
+        <div class="form-box" >
+            <div class="button-box" >
+                <div id="btn"></div>
+                <button  type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button  type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="..//img/logo/fb.png">
+                <img src="..//img/logo/tw.png">
+                <img src="..//img/logo/gp.png">
+            </div> 
+            <form  id="log-in" class="input-group">
+                <input type="text" class="input-field " placeholder="User Id" required>
+                <input type="text" class="input-field " placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="Submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field " placeholder="User Id" required>
+                <input type="email" class="input-field " placeholder="Email Id" required>
+                <input type="text" class="input-field " placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="Submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+       
+    </div>
+    <script>
+var x = document.getElementById("log-in");
+var y = document.getElementById("register");
+var z = document.getElementById("btn");
 
-		</form>
-	</div>
+function register(){
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+}
+
+function login(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+}
+
+    </script>
 </body>
 </html>
