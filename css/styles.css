@@ -52,13 +52,10 @@ body { margin: 0px;border: 0px;padding: 0px; }
 
 /* banner section start-------------------------------------*/
 
-.banner1{
-  background-image: url('img/pic2.jpg');
+.banner1{ background-image: url('img/images/banner1.jpg');
   width: auto;
   height: 700px;
-  background-size: cover;
-
-}
+  background-size: cover; }
 .left-s{ float: left;height: 250px;}
 
 .left-s h3{ font-family: Georgia, serif; padding: 10px 75px; font-size: 32px; }
