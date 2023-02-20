@@ -1,3 +1,6 @@
+<<<<<<< HEAD:styles.css
+
+=======
 .heading-about{
     height: 2000px;
     background-color: rgb(24, 24, 47);
@@ -79,6 +82,11 @@
     position: relative;
     margin-left: 550px;
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a4566f3d9535a6ef97f34961236e8a7755262c6d:css/styles.css
+>>>>>>> 0dc41521f7bbf656e96348ebd8c1aabc3a5a61cd
 body { margin: 0px;border: 0px;padding: 0px; }
 * { font-family: sans-serif;}
 
@@ -206,6 +214,10 @@ h1 {
 }
 /*category media end-----------------------*/
 
+<<<<<<< HEAD
+=======
+/*categories section end*/
+
 /*footer section*/
 .footerarea {
   background-color: #00ab5e;
@@ -231,6 +243,7 @@ h1 {
   color: #fff;  display: inline-block; padding-right: 5px;
 }
 
+
 /* Media Queries */
 
 @media (max-width: 600px) {
@@ -245,5 +258,12 @@ h1 {
     line-height: 1.8;
   }
 }
+<<<<<<< HEAD:styles.css
+
+
+
+/*footer end-----------------------*/
+=======
 /*footer end-----------------------*/
 
+>>>>>>> a4566f3d9535a6ef97f34961236e8a7755262c6d:css/styles.css
