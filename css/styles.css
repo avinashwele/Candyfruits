@@ -1,3 +1,6 @@
+<<<<<<< HEAD:styles.css
+
+=======
 .heading-about{
     height: 2000px;
     background-color: rgb(24, 24, 47);
@@ -80,6 +83,7 @@
     margin-left: 550px;
 }
 =======
+>>>>>>> a4566f3d9535a6ef97f34961236e8a7755262c6d:css/styles.css
 body { margin: 0px;border: 0px;padding: 0px; }
 * { font-family: sans-serif;}
 
@@ -339,6 +343,88 @@ font-size:25px;
 
 
 
+/* Contact us Start------*/
+*
+{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color:#efefef;
+}
+.contact-info{
+  width:100%;
+  height:100vh;
+  background-image:url(img/background.jpg);
+  background-position:center;
+  background-size:cover;
+  display:flex;  
+}
+.reach-us{
+  width:500px;
+  height:540px;
+  background-color: rgb(228, 177, 10);
+  top:55%;
+  left:75%;
+  transform:translate(-50%,-50%);
+  position:absolute;
+}
+.contact-box{
+  width:800px;
+  height:540px;
+  background-color: #fff;
+  top:55%;
+  left:35%;
+  transform:translate(-50%,-50%);
+  position:absolute;
+}
+.info-section{
+  color:white;
+  font-size:30px;
+  padding-top:30px;
+  padding-left:10ps;
+}
+.reach-us-info{
+  padding-top:50px;
+  padding-left:30px;
+  color:white;
+  font-size:25px;
+} 
+form{
+  margin:35px;
+}
+.input-field{
+  width:650px;
+  height:45px;
+  margin-top:20px;
+  padding-left:10px;
+  padding-right:10px;
+  border:1px solid #777;
+  border-radius:10px;
+  outline:none;
+}
+.textarea-field{
+  height:150px;
+  padding-top:10px;
+}
+.btn{
+  border-radius:20px;
+  color:black;
+  margin-top:18px;
+  padding:10px;
+  background-color: rgb(228, 177, 10);
+  font-size:20px;
+  border:none;
+  cursor:pointer;
+}
+.h1-container{
+  text-align:center;
+  padding-top:10px; 
+  font-size:35px;
+}
+
+/*Contact us end---------*/
+
 /*footer section*/
 .footerarea {
   background-color: #00ab5e;
@@ -364,6 +450,7 @@ font-size:25px;
   color: #fff;  display: inline-block; padding-right: 5px;
 }
 
+
 /* Media Queries */
 
 @media (max-width: 600px) {
@@ -378,5 +465,12 @@ font-size:25px;
     line-height: 1.8;
   }
 }
+<<<<<<< HEAD:styles.css
+
+
+
+/*footer end-----------------------*/
+=======
 /*footer end-----------------------*/
 
+>>>>>>> a4566f3d9535a6ef97f34961236e8a7755262c6d:css/styles.css
